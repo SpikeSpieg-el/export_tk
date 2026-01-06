@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48" height="57" viewBox="0 0 48 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect width="6" height="56" fill="#2D3748" fill-rule="evenodd" />
+    <rect width="6" height="56" fill="#2D3748" fill-rule="evenodd" transform="translate(42 0)" />
+    <rect width="48" height="8" fill="#4A5568" fill-rule="evenodd" />
+    <line x1="1" y1="0" x2="1" y2="12" fill="none" stroke-width="2" stroke="#718096" transform="translate(11 8)" />
+    <line x1="1" y1="0" x2="1" y2="12" fill="none" stroke-width="2" stroke="#718096" transform="translate(35 8)" />
+    <path d="M0 0C0 0 36 0 36 0C36 0 32 28 32 28C32 34 28 36 18 36C8 36 4 34 4 28C4 28 0 0 0 0Z" fill="#1A202C" stroke-width="2" stroke="#4A5568" transform="translate(6 20)" />
+    <path d="M0 3C0 0.790861 9.05888 0 19 0C28.9411 0 38 0.790861 38 3C38 5.20914 28.9411 8 19 8C9.05888 8 0 5.20914 0 3Z" fill="#ED8936" fill-rule="evenodd" transform="translate(5 16)" />
+    <path d="M0 0.00286865C0 0.00286865 2.00001 13.366 2.00001 13.366C4.00001 23.366 20.0001 23.366 22 13.366C22 13.366 24 0 24 0C24 0 17.762 1.27441 11.762 1.27441C5.76195 1.27441 0 0.00286865 0 0.00286865Z" fill="#DD6B20" transform="translate(12 22.634)" />
+    <path d="M0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4C0.89543 4 0 3.10457 0 2Z" fill="#FFFF00" fill-rule="evenodd" transform="translate(18 16)" />
+    <path d="M0 1.5C0 0.671574 0.671574 0 1.5 0C2.32843 0 3 0.671574 3 1.5C3 2.32843 2.32843 3 1.5 3C0.671574 3 0 2.32843 0 1.5Z" fill="#FFFF00" fill-rule="evenodd" transform="translate(26.5 19.5)" />
+    <path d="M0 1C0 0.447716 0.447716 0 1 0C1.55228 0 2 0.447716 2 1C2 1.55228 1.55228 2 1 2C0.447716 2 0 1.55228 0 1Z" fill="#FFFF00" fill-rule="evenodd" transform="translate(31 16)" />
+  </g>
+</svg>

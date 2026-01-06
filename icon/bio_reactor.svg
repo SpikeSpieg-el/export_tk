@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="46" height="57" viewBox="0 0 46 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(1 1)">
+    <rect width="6" height="8" fill="#1A202C" fill-rule="evenodd" transform="translate(4 48)" />
+    <rect width="6" height="8" fill="#1A202C" fill-rule="evenodd" transform="translate(34 48)" />
+    <path d="M0 8L0 4C0 2.89543 0.390524 1.95262 1.17157 1.17157C1.95262 0.390524 2.89543 0 4 0L40 0C41.1046 0 42.0474 0.390524 42.8284 1.17157C43.6095 1.95262 44 2.89543 44 4L44 40C44 41.1046 43.6095 42.0474 42.8284 42.8284C42.0474 43.6095 41.1046 44 40 44L4 44C2.89543 44 1.95262 43.6095 1.17157 42.8284C0.390524 42.0474 0 41.1046 0 40L0 8Z" fill="#4A5568" fill-rule="evenodd" stroke-width="2" stroke="#1A202C" transform="translate(0 6)" />
+    <rect width="28" height="6" fill="#718096" fill-rule="evenodd" stroke-width="2" stroke="#1A202C" transform="translate(8 0)" />
+    <path d="M0 4L0 2C0 1.44771 0.195262 0.976311 0.585786 0.585787C0.976311 0.195262 1.44772 0 2 0L30 0C30.5523 0 31.0237 0.195262 31.4142 0.585787C31.8047 0.976311 32 1.44771 32 2L32 30C32 30.5523 31.8047 31.0237 31.4142 31.4142C31.0237 31.8047 30.5523 32 30 32L2 32C1.44772 32 0.976311 31.8047 0.585786 31.4142C0.195262 31.0237 0 30.5523 0 30L0 4Z" fill="#1A202C" fill-rule="evenodd" transform="translate(6 12)" />
+    <path d="M0 3C4 -1 12 -1 16 3C20 7 28 7 32 3C32 3 32 19 32 19L0 19C0 19 0 3 0 3Z" fill="#A3E635" transform="translate(6 25)" />
+    <path d="M0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3Z" fill="#FFFFFF" fill-rule="evenodd" transform="translate(9 33)" />
+    <path d="M0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4C0.89543 4 0 3.10457 0 2Z" fill="#FFFFFF" fill-rule="evenodd" transform="translate(26 30)" />
+    <path d="M0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4C0.89543 4 0 3.10457 0 2Z" fill="#A3E635" fill-rule="evenodd" transform="translate(18 18)" />
+    <path d="M0 1L8 1" fill="none" stroke-width="4" stroke="#718096" stroke-linecap="round" transform="translate(4 17)" />
+  </g>
+</svg>
