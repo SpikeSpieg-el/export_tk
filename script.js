@@ -1253,6 +1253,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function drawTooltip() {
+        
         if (hoverState.cellIndex === -1 || selectedBuildingType || isDemolishMode) return;
 
         const cell = gameState.grid[hoverState.cellIndex];
@@ -1514,12 +1515,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
         tooltip.innerHTML = tooltipContent;
 
+    // === АДАПТИВНОЕ ПОЗИЦИОНИРОВАНИЕ ===
+    
+    // Проверка на тач-устройство (простая)
+    const isMobile = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
+    if (isMobile) {
+        // Мобильный режим: стили заданы в mobile.css (#canvas-tooltip)
+        // Мы просто показываем его. CSS закрепит его внизу.
+        tooltip.style.display = 'block';
+        tooltip.style.left = ''; 
+        tooltip.style.top = '';
+        // Сбрасываем инлайновые стили позиционирования, чтобы работал CSS класс
+    } else {
+        // Десктопный режим: следует за мышью
         const canvasRect = canvas.getBoundingClientRect();
         const tooltipRect = tooltip.getBoundingClientRect();
         
         let tooltipX = hoverState.mouseX + canvasRect.left + 15;
         let tooltipY = hoverState.mouseY + canvasRect.top + 15;
 
+        // Проверка границ экрана
         if (tooltipX + tooltipRect.width > window.innerWidth) {
             tooltipX = hoverState.mouseX + canvasRect.left - tooltipRect.width - 15;
         }
@@ -1530,6 +1546,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.left = `${tooltipX}px`;
         tooltip.style.top = `${tooltipY}px`;
         tooltip.style.display = 'block';
+    }
+
     }
 
     // =================================================================================
@@ -6522,7 +6540,15 @@ window.ReportsSystem = {
             if (window.HandbookSystem) window.HandbookSystem.init();
             
             // --- Event Listeners ---
-            window.addEventListener('resize', () => { canvas.width = gameWorldElement.clientWidth; canvas.height = gameWorldElement.clientHeight; isMapDirty = true; }); 
+            window.addEventListener('resize', () => { 
+                // Небольшая задержка помогает на мобильных браузерах при скрытии адресной строки
+                setTimeout(() => {
+                    canvas.width = gameWorldElement.clientWidth; 
+                    canvas.height = gameWorldElement.clientHeight; 
+                    isMapDirty = true; // Перерисовка кеша
+                    draw(); // Принудительная отрисовка
+                }, 100);
+            });
             canvas.addEventListener('mousedown', onMouseDown); 
             canvas.addEventListener('mousemove', onMouseMove); 
             canvas.addEventListener('mouseup', onMouseUp); 
